@@ -7,7 +7,8 @@ describe('* User entity test', function () {
       fullname: 'thiago',
       email: 'thiago@email.com',
       password: '123456',
-      nickname: 'mariotto21'
+      nickname: 'mariotto21',
+      role: 'member'
     };
 
     const user = new User('thiago', 'thiago@email.com', '123456', 'mariotto21');
