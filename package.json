@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Thiago Mariotto <thiagomariotto@outlook.com.br>",
   "license": "MIT",
+  "scripts": {
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
+  },
   "devDependencies": {
     "@types/chai": "^4.3.3",
     "@types/mocha": "^10.0.0",
@@ -13,6 +16,7 @@
     "@typescript-eslint/parser": "^5.40.1",
     "chai": "^4.3.6",
     "eslint": "^8.25.0",
+    "mocha": "^10.1.0",
     "sinon": "^14.0.1",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
