@@ -6,11 +6,12 @@ describe('* Game entity test', function () {
     const game = new Game('League Of Legends');
     game.addCategory(1, true);
     game.addCategory(2, false);
+
     expect(game).to.be.deep.equal({
       name: 'League Of Legends',
       categories: [{ id: 1, primary: true }, { id: 2, primary: false }]
     });
-    expect(game.categories).to.length(2);
+    expect(game.getCategories()).to.length(2);
   });
 
   it('Must not add two primary category a game', function () {
