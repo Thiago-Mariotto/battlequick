@@ -1,3 +1,5 @@
+import UserRoleTypes from '../../utils/UserRoleTypes';
+
 export default class User {
   private id?: string;
   private fullname: string;
@@ -12,7 +14,7 @@ export default class User {
     this.email = email;
     this.password = password;
     this.nickname = nickname;
-    this.role = 'member';
+    this.role = UserRoleTypes.MEMBER;
   }
 
   private emailIsValid(email: string) {
