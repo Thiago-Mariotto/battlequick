@@ -1,12 +1,12 @@
 import UserRoleTypes from '../../utils/UserRoleTypes';
 
 export default class User {
-  private id?: string;
-  private fullname: string;
-  private email: string;
-  private password: string;
-  private nickname: string;
-  private role;
+  readonly id?: number;
+  readonly fullname: string;
+  readonly email: string;
+  readonly password: string;
+  readonly nickname: string;
+  readonly role;
 
   constructor(fullname: string, email: string, password: string, nickname: string) {
     if (!this.emailIsValid(email)) throw new Error('Invalid Email');
